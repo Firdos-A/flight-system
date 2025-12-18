@@ -63,4 +63,9 @@ public class Notification {
     public String getMessage() { return message; }
     public String getType() { return type; }
     public LocalDateTime getTimestamp() { return timestamp; }
+
+    
+    public String sendPaymentConfirmation(String email, double d) {
+        return String.format("Payment of %.2f confirmed for %s", d, email);
+    }
 }

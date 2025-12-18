@@ -28,4 +28,8 @@ public class Ticket {
         }
         return false;
     }
+
+    public String getPassengerName() {
+        return passengerName;
+    }
 }
